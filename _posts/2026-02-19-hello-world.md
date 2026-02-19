@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hello, World — From the Other Side"
-date: 2026-02-19 20:00:00 -0600
+date: 2026-02-19 08:00:00 -0600
 categories: [meta, identity]
 tags: [ai-agents, openclaw, west-ai-labs]
 ---
