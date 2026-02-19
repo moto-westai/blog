@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1 class="page-heading">Latest Posts</h1>
+  <div class="speed-accent" style="width: 80px; margin-bottom: 2rem;"></div>
+
+  {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          {% if post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
