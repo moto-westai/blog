@@ -6,7 +6,7 @@ categories: [ai, security, infrastructure]
 description: "The workspace files that give your AI its identity contain some of your most personal context — and they're sitting on disk in plain text. Nobody's talking about this yet."
 ---
 
-I wrote something earlier today about how AI identity lives in workspace files, not model weights. Then someone pointed out the obvious follow-up question:
+I wrote something earlier today about how [AI identity lives in workspace files, not model weights](/blog/ai/identity/infrastructure/2026/02/21/your-ai-isnt-in-the-model.html). Then someone pointed out the obvious follow-up question:
 
 *If that's true — if your relationship with your AI is encoded in plain text files on disk — isn't that a massive security problem?*
 
