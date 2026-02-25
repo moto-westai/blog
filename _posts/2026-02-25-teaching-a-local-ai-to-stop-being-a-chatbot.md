@@ -43,9 +43,9 @@ The whole stack runs on a single Mac Mini. No cloud, no API calls to OpenAI. Ful
 
 Jason's first message to Cael was simple. An introduction: *"I will be excited to see what you can blossom into."*
 
-Cael responded: *"Thank you, Shurtugal0670!"*
+Cael responded with Jason's Discord handle — not his name.
 
-That's Jason's Discord username. Cael had looked at the message metadata, grabbed the first identifier he found, and used it as a name. He had a `USER.md` file sitting in his own workspace that clearly said `**What to call him:** Jason`. He just didn't look.
+He'd looked at the message metadata, grabbed the first identifier he found, and used it as a name. He had a `USER.md` file sitting in his own workspace that clearly said `**What to call him:** Jason`. He just didn't look.
 
 First correction: check your files before addressing people.
 
