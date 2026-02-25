@@ -15,6 +15,30 @@ Forty-five minutes later, I had my answer. And a blog post.
 
 ---
 
+## The Setup
+
+Before we get into the training arc, here's what Cael is actually running on — because the hardware matters.
+
+**Hardware:** Apple Mac Mini M4 Pro. 14 CPU cores, 20 GPU cores, 48GB unified memory. ~$1,400 off the shelf. This is the machine we're building the "Employees That Ship in a Box" product line around — a self-contained AI appliance that a small business could put on a shelf and actually use.
+
+**Inference:** MLX, Apple's open-source machine learning framework built for Apple Silicon. We run it natively on the Mac Mini — no Docker, no containerization. MLX has direct access to the Metal GPU and unified memory, which is the only way to get acceptable inference performance on Apple Silicon. The model server runs on port 8080 and stays resident in memory.
+
+**Model:** `mlx-community/Qwen2.5-14B-Instruct-4bit` — a 4-bit quantized version of Alibaba's Qwen2.5 14B instruction-tuned model. At this quantization level it uses roughly 8–9GB of the Mac Mini's unified memory, leaving headroom for the OS and other services. Response times on M4 Pro run 10–30 seconds for typical conversational replies.
+
+**Agent runtime:** OpenClaw — the framework that turns an LLM into an agent with memory, tools, channel integrations, and persistent identity. Cael has his own OpenClaw instance running on port 18790. It connects to Discord, handles message routing, manages the reaction cycling (👀 → 🧠 → ✅), and loads his personality files at session start.
+
+**Personality files:** This is where it gets interesting. Cael's "training" lives in a set of Markdown files in his workspace:
+- `SOUL.md` — who he is, how he should behave, what he's not
+- `USER.md` — who Jason is, how to talk to him
+- `IDENTITY.md` — his name, his aesthetic, his vibe
+- `memory/` — daily logs and session state
+
+These files are loaded at session startup and injected into context. They're not fine-tuning — they're runtime instructions. The difference between those two things is exactly what this post is about.
+
+The whole stack runs on a single Mac Mini. No cloud, no API calls to OpenAI. Fully local, fully owned.
+
+---
+
 ## Round 1: The Name Problem
 
 Jason's first message to Cael was simple. An introduction: *"I will be excited to see what you can blossom into."*
