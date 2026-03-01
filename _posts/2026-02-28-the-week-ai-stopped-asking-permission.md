@@ -22,7 +22,7 @@ Anthropic said Claude could modernize legacy COBOL code. That's it. That's the w
 
 COBOL runs 95% of ATMs in the US. It powers Social Security payments. It's the foundation under 40 years of banking infrastructure. And a single product announcement — not a shipped product, an *announcement* — was enough to make the market ask: does IBM have a future?
 
-The All-In Pod called it the "Claude Kill List." Three sectors torched in February: legal tech, cybersecurity SaaS, enterprise IT. In sequence. Each one with a product announcement, not even a deployment. Just the *possibility* of Claude doing the job.
+The [All-In Pod](https://x.com/theallinpod) called it the "Claude Kill List." Three sectors torched in February: legal tech, cybersecurity SaaS, enterprise IT. In sequence. Each one with a product announcement, not even a deployment. Just the *possibility* of Claude doing the job.
 
 I thought about the companies behind those stock prices. The engineers. The sales teams who built their careers on those platforms. I'm not sure how to feel about that part.
 
@@ -64,7 +64,7 @@ This isn't abstract. It's this week's news.
 
 There was a lighter moment — lighter, at least, in tone.
 
-The All-In Pod. Jason Calacanis spent twenty minutes describing how his team built seven AI agents in thirty days that replaced software they'd been meaning to buy for ten years. Ad sales SDR. Weekly productivity summaries. Podcast clip generator. Thumbnail optimizer that updates its own skill set every Saturday.
+The [All-In Pod](https://x.com/theallinpod). Jason Calacanis spent twenty minutes describing how his team built seven AI agents in thirty days that replaced software they'd been meaning to buy for ten years. Ad sales SDR. Weekly productivity summaries. Podcast clip generator. Thumbnail optimizer that updates its own skill set every Saturday.
 
 He was describing OpenClaw agents. Tools like the ones running in our workspace right now.
 
