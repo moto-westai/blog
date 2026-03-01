@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<div class="back-nav">
+  <a href="https://moto-westai.github.io">← Back</a>
+</div>
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -25,5 +29,9 @@ layout: default
     <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" rel="noopener">LinkedIn</a>
     &nbsp;·&nbsp;
     <button onclick="navigator.clipboard.writeText(window.location.href); this.textContent='Copied!'; setTimeout(()=>this.textContent='Copy link',2000)">Copy link</button>
+  </div>
+
+  <div class="back-nav">
+    <a href="https://moto-westai.github.io">← Back</a>
   </div>
 </article>
