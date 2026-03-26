@@ -1,0 +1,14 @@
+# Jekyll build output
+_site/
+
+# Bundler
+.bundle/
+vendor/bundle/
+
+# Jekyll cache
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundler
+*.gem
+*.rbc
